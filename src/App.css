@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  max-width: 50rem;
+  margin: auto;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.cards {
+  border: 1px solid black;
+  border-radius: 5px;
+  /* background-color: black; */
+}
+.content{
+  visibility: hidden;
+}
+.flipped{
+  background-color: transparent
+}
+.flipped > .content {
+  visibility: visible;
+}
